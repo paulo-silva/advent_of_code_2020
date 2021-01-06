@@ -5,7 +5,7 @@ defmodule AdventOfCode.DayOne do
 
   def exercise_input do
     File.cwd!()
-    |> Kernel.<>("/lib/advent_of_code/inputs/day_one.txt")
+    |> Kernel.<>("/lib/advent_of_code/inputs/day_one.input")
     |> File.read!()
     |> String.split("\n")
     |> Enum.reject(&(String.length(&1) == 0))
